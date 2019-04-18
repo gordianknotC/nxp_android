@@ -1,0 +1,821 @@
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleCancel
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleCancel
+I/flutter ( 5129): widget.isBusy(): false, submit
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleCancel
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [D NIOWID]	 set currentCycle to 0
+I/flutter ( 5129): [I NIO]	 dispatch: NFCyclePatrolState
+I/flutter ( 5129): [I NIO]	 patrol
+I/flutter ( 5129): [I NIO]	 writeCommandForRead, EIO.patrol, rawRecord: null
+I/flutter ( 5129): [I NIO]	 write - command bytes: 1
+I/flutter ( 5129): [D NIOWID]	 				Write command for mock: true
+I/flutter ( 5129): [D NIOWID]	 mock write: 1, cycle: 1
+I/flutter ( 5129): [I ACTIV]	 DEMO <- write bytes: [1]
+I/flutter ( 5129): at 32
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I NIO]	 yield: NFCyclePatrolState
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCyclePatrolState
+I/flutter ( 5129): _showAnimIconMessage
+D/demo    ( 5129): onMethodCall: writeEEPROMCustomBytes
+D/FI2C    ( 5129): call writeEEPROMCustomBytes
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.trying, add a new one, [MessengerWidget]
+D/Demo    ( 5129): writeEEPROMCustomBytes startAt [B@de8837a
+I/flutter ( 5129): [I MSG_STACK]	 gen non-interactable messenger: ????...
+I/flutter ( 5129): [D MSG_STACK]	 set non-timeout messenger: ????...
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#b6ce8]]
+D/Demo    ( 5129): writeEEPROMCustomBytes from 32 to [B@2e6b572b
+D/NI2C    ( 5129): writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCyclePatrolState
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCyclePatrolState
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCyclePatrolState
+I/flutter ( 5129): patrol isBusy: true
+D/write   ( 5129): 32: 1,0,0,0
+D/NdeFrag ( 5129): toastMessage: command written, tag:ndefWriteSuccess
+D/Demo    ( 5129): writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCyclePatrolState
+I/flutter ( 5129): [D MSG_STACK]	 rebuild widget.rebuild:false
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes startAt [B@de8837a
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes from 32 to [B@2e6b572b
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NI2C] writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[write] 32: 1,0,0,0
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command written, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command written, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command written, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command written
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command written
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCyclePatrolState
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D ACTIV]	 response from writeEEPROMCustomBytes: true
+I/flutter ( 5129): [D NIOWID]	 2-write commend success
+I/flutter ( 5129): [I NIO]	 NFCyclePatrolState writeCommand Success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [I NIO]	 yield: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleWriteCommandSuccess
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [D MSG_WID]	 initState ????...
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.dismissed, W:????..., t:1
+I/flutter ( 5129): [D MSG_WID]	 forward play ????..., status:AnimationStatus.dismissed
+I/flutter ( 5129): controller stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 ????..., stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ????..., t:1, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for transition only
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_STATE]	 renew body .....????... ## ????...
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl create state
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.forward
+I/flutter ( 5129): [D NIOWID]	 ### seek#0 start:
+I/flutter ( 5129): [D MSG_PROG]	 restart LinearProgressCtrlState......
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl initState
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): controller stat: AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 ????..., stat: AnimationStatus.completed
+I/flutter ( 5129): anim completed
+I/flutter ( 5129): [I NIO]	 writeCommandForRead - read command, rawRecord: null
+I/flutter ( 5129): [D NIOWID]	 mock - read cycle: 1/6
+I/flutter ( 5129): [D NIOWID]	 1read command, mock: false/true
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: {startAt: [32], length: 1, extra: {readCommand: true}}
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+D/demo    ( 5129): onMethodCall: readEEPROMCustomBytes
+D/FI2C    ( 5129): call readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call readEEPROMCustomBytes
+D/Demo    ( 5129): ntag.readEEPROMCustomBytes from 32 to 33,
+D/Demo    ( 5129): bytes: 1,0,0,0
+D/Demo    ( 5129): length: 4, blocSize: 4
+D/NdeFrag ( 5129): toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] ntag.readEEPROMCustomBytes from 32 to 33,
+I/flutter ( 5129): bytes: 1,0,0,0
+I/flutter ( 5129): length: 4, blocSize: 4
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command read, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command read, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command read, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command read
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command read
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleWriteCommandSuccess
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: [1, 0, 0, 0]
+I/flutter ( 5129): [D NIO]	 get 1 as result from read command, retry again
+I/flutter ( 5129): [I NIO]	 read command retry
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleRetry
+I/flutter ( 5129): [I NIO]	 retry, counter: 2
+I/flutter ( 5129): [I NIO]	 writeCommandForRead, EIO.patrol, rawRecord: null
+I/flutter ( 5129): [I NIO]	 write - command bytes: 1
+I/flutter ( 5129): [D NIOWID]	 				Write command for mock: true
+I/flutter ( 5129): [D NIOWID]	 mock write: 1, cycle: 1
+D/demo    ( 5129): onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 DEMO <- write bytes: [1]
+I/flutter ( 5129): at 32
+D/FI2C    ( 5129): call vibrate
+D/demo    ( 5129): onMethodCall: writeEEPROMCustomBytes
+D/FI2C    ( 5129): call writeEEPROMCustomBytes
+D/Demo    ( 5129): writeEEPROMCustomBytes startAt [B@e856788
+D/Demo    ( 5129): writeEEPROMCustomBytes from 32 to [B@2f88b521
+D/NI2C    ( 5129): writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I NIO]	 yield: NFCycleRetry
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleRetry
+I/flutter ( 5129): [D NIOWID]	 set currentCycle to 2
+D/write   ( 5129): 32: 1,0,0,0
+D/NdeFrag ( 5129): toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): _showAnimIconMessage
+D/Demo    ( 5129): writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.trying, found existing info: MessengerWidget, replaced messages:(EMsgType.trying)
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.completed
+I/flutter ( 5129): [D NIOWID]	 ### seek#2 end to continue
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#c9ebc]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): patrol isBusy: true
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes startAt [B@e856788
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes from 32 to [B@2f88b521
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NI2C] writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[write] 32: 1,0,0,0
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command written, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command written, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command written, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command written
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command written
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D ACTIV]	 response from writeEEPROMCustomBytes: true
+I/flutter ( 5129): [D NIOWID]	 2-write commend success
+I/flutter ( 5129): [I NIO]	 NFCycleRetry writeCommand Success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [I NIO]	 yield: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleWriteCommandSuccess
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.completed, W:???????..., t:2
+I/flutter ( 5129): [D MSG_WID]	 block forward play ???????..., status:AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ???????..., t:2, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for transition only
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_STATE]	 renew body .....???????... ## ???????...
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl create state
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.forward
+I/flutter ( 5129): [D NIOWID]	 ### seek#2 start:
+I/flutter ( 5129): [D MSG_PROG]	 restart LinearProgressCtrlState......
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl initState
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): [I NIO]	 writeCommandForRead - read command, rawRecord: null
+I/flutter ( 5129): [D NIOWID]	 mock - read cycle: 3/6
+I/flutter ( 5129): [D NIOWID]	 1read command, mock: false/true
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: {startAt: [32], length: 1, extra: {readCommand: true}}
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+D/demo    ( 5129): onMethodCall: readEEPROMCustomBytes
+D/FI2C    ( 5129): call readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call readEEPROMCustomBytes
+D/Demo    ( 5129): ntag.readEEPROMCustomBytes from 32 to 33,
+D/Demo    ( 5129): bytes: 1,0,0,0
+D/Demo    ( 5129): length: 4, blocSize: 4
+D/NdeFrag ( 5129): toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] ntag.readEEPROMCustomBytes from 32 to 33,
+I/flutter ( 5129): bytes: 1,0,0,0
+I/flutter ( 5129): length: 4, blocSize: 4
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command read, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command read, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command read, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command read
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command read
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleWriteCommandSuccess
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: [1, 0, 0, 0]
+I/flutter ( 5129): [D NIO]	 get 1 as result from read command, retry again
+I/flutter ( 5129): [I NIO]	 read command retry
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleRetry
+I/flutter ( 5129): [I NIO]	 retry, counter: 3
+I/flutter ( 5129): [I NIO]	 writeCommandForRead, EIO.patrol, rawRecord: null
+I/flutter ( 5129): [I NIO]	 write - command bytes: 1
+I/flutter ( 5129): [D NIOWID]	 				Write command for mock: true
+I/flutter ( 5129): [D NIOWID]	 mock write: 1, cycle: 3
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I ACTIV]	 DEMO <- write bytes: [1]
+I/flutter ( 5129): at 32
+D/demo    ( 5129): onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I NIO]	 yield: NFCycleRetry
+D/FI2C    ( 5129): call writeEEPROMCustomBytes
+D/Demo    ( 5129): writeEEPROMCustomBytes startAt [B@1ceb5d46
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleRetry
+I/flutter ( 5129): [D NIOWID]	 set currentCycle to 3
+D/Demo    ( 5129): writeEEPROMCustomBytes from 32 to [B@30c63b07
+I/flutter ( 5129): _showAnimIconMessage
+D/NI2C    ( 5129): writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.trying, found existing info: MessengerWidget, replaced messages:(EMsgType.trying)
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.completed
+I/flutter ( 5129): [D NIOWID]	 ### seek#3 end to continue
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+D/write   ( 5129): 32: 1,0,0,0
+D/NdeFrag ( 5129): toastMessage: command written, tag:ndefWriteSuccess
+D/Demo    ( 5129): writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#de29a]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): patrol isBusy: true
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes startAt [B@1ceb5d46
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes from 32 to [B@30c63b07
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NI2C] writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[write] 32: 1,0,0,0
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command written, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command written, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command written, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command written
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command written
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D ACTIV]	 response from writeEEPROMCustomBytes: true
+I/flutter ( 5129): [D NIOWID]	 2-write commend success
+I/flutter ( 5129): [I NIO]	 NFCycleRetry writeCommand Success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [I NIO]	 yield: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleWriteCommandSuccess
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.completed, W:???????..., t:3
+I/flutter ( 5129): [D MSG_WID]	 block forward play ???????..., status:AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ???????..., t:3, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for transition only
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_STATE]	 renew body .....???????... ## ???????...
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl create state
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.forward
+I/flutter ( 5129): [D NIOWID]	 ### seek#3 start:
+I/flutter ( 5129): [D MSG_PROG]	 restart LinearProgressCtrlState......
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl initState
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [I NIO]	 writeCommandForRead - read command, rawRecord: null
+I/flutter ( 5129): [D NIOWID]	 mock - read cycle: 4/6
+I/flutter ( 5129): [D NIOWID]	 1read command, mock: false/true
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: {startAt: [32], length: 1, extra: {readCommand: true}}
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+D/demo    ( 5129): onMethodCall: readEEPROMCustomBytes
+D/FI2C    ( 5129): call readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call readEEPROMCustomBytes
+D/Demo    ( 5129): ntag.readEEPROMCustomBytes from 32 to 33,
+D/Demo    ( 5129): bytes: 1,0,0,0
+D/Demo    ( 5129): length: 4, blocSize: 4
+D/NdeFrag ( 5129): toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] ntag.readEEPROMCustomBytes from 32 to 33,
+I/flutter ( 5129): bytes: 1,0,0,0
+I/flutter ( 5129): length: 4, blocSize: 4
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command read, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command read, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command read, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command read
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command read
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleWriteCommandSuccess
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: [1, 0, 0, 0]
+I/flutter ( 5129): [D NIO]	 get 1 as result from read command, retry again
+I/flutter ( 5129): [I NIO]	 read command retry
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleRetry
+I/flutter ( 5129): [I NIO]	 retry, counter: 4
+I/flutter ( 5129): [I NIO]	 writeCommandForRead, EIO.patrol, rawRecord: null
+I/flutter ( 5129): [I NIO]	 write - command bytes: 1
+I/flutter ( 5129): [D NIOWID]	 				Write command for mock: true
+I/flutter ( 5129): [D NIOWID]	 mock write: 1, cycle: 4
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I ACTIV]	 DEMO <- write bytes: [1]
+I/flutter ( 5129): at 32
+D/demo    ( 5129): onMethodCall: writeEEPROMCustomBytes
+D/FI2C    ( 5129): call writeEEPROMCustomBytes
+D/Demo    ( 5129): writeEEPROMCustomBytes startAt [B@18cd7434
+D/Demo    ( 5129): writeEEPROMCustomBytes from 32 to [B@3d1a825d
+D/NI2C    ( 5129): writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I NIO]	 yield: NFCycleRetry
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleRetry
+I/flutter ( 5129): [D NIOWID]	 set currentCycle to 4
+I/flutter ( 5129): _showAnimIconMessage
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.trying, found existing info: MessengerWidget, replaced messages:(EMsgType.trying)
+D/write   ( 5129): 32: 1,0,0,0
+D/NdeFrag ( 5129): toastMessage: command written, tag:ndefWriteSuccess
+D/Demo    ( 5129): writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.completed
+I/flutter ( 5129): [D NIOWID]	 ### seek#4 end to continue
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#6a819]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): patrol isBusy: true
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes startAt [B@18cd7434
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes from 32 to [B@3d1a825d
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NI2C] writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[write] 32: 1,0,0,0
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command written, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command written, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command written, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command written
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command written
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D ACTIV]	 response from writeEEPROMCustomBytes: true
+I/flutter ( 5129): [D NIOWID]	 2-write commend success
+I/flutter ( 5129): [I NIO]	 NFCycleRetry writeCommand Success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [I NIO]	 yield: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleWriteCommandSuccess
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.completed, W:???????..., t:4
+I/flutter ( 5129): [D MSG_WID]	 block forward play ???????..., status:AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ???????..., t:4, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for transition only
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_STATE]	 renew body .....???????... ## ???????...
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl create state
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.forward
+I/flutter ( 5129): [D NIOWID]	 ### seek#4 start:
+I/flutter ( 5129): [D MSG_PROG]	 restart LinearProgressCtrlState......
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl initState
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [I NIO]	 writeCommandForRead - read command, rawRecord: null
+I/flutter ( 5129): [D NIOWID]	 mock - read cycle: 5/6
+I/flutter ( 5129): [D NIOWID]	 1read command, mock: false/true
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: {startAt: [32], length: 1, extra: {readCommand: true}}
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+D/demo    ( 5129): onMethodCall: readEEPROMCustomBytes
+D/FI2C    ( 5129): call readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call readEEPROMCustomBytes
+D/Demo    ( 5129): ntag.readEEPROMCustomBytes from 32 to 33,
+D/Demo    ( 5129): bytes: 1,0,0,0
+D/Demo    ( 5129): length: 4, blocSize: 4
+D/NdeFrag ( 5129): toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] ntag.readEEPROMCustomBytes from 32 to 33,
+I/flutter ( 5129): bytes: 1,0,0,0
+I/flutter ( 5129): length: 4, blocSize: 4
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command read, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command read, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command read, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command read
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command read
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleWriteCommandSuccess
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: [1, 0, 0, 0]
+I/flutter ( 5129): [D NIO]	 get 1 as result from read command, retry again
+I/flutter ( 5129): [I NIO]	 read command retry
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleRetry
+I/flutter ( 5129): [I NIO]	 retry, counter: 5
+I/flutter ( 5129): [I NIO]	 writeCommandForRead, EIO.patrol, rawRecord: null
+I/flutter ( 5129): [I NIO]	 write - command bytes: 1
+I/flutter ( 5129): [D NIOWID]	 				Write command for mock: true
+I/flutter ( 5129): [D NIOWID]	 mock write: 1, cycle: 5
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [I ACTIV]	 DEMO <- write bytes: [1]
+I/flutter ( 5129): at 32
+D/demo    ( 5129): onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I NIO]	 yield: NFCycleRetry
+D/FI2C    ( 5129): call writeEEPROMCustomBytes
+D/Demo    ( 5129): writeEEPROMCustomBytes startAt [B@8f007d2
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleRetry
+I/flutter ( 5129): [D NIOWID]	 set currentCycle to 5
+D/Demo    ( 5129): writeEEPROMCustomBytes from 32 to [B@f0180a3
+I/flutter ( 5129): _showAnimIconMessage
+D/NI2C    ( 5129): writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.trying, found existing info: MessengerWidget, replaced messages:(EMsgType.trying)
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.completed
+I/flutter ( 5129): [D NIOWID]	 ### seek#5 end to continue
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+D/write   ( 5129): 32: 1,0,0,0
+D/NdeFrag ( 5129): toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#b4263]]
+D/Demo    ( 5129): writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): patrol isBusy: true
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call writeEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes startAt [B@8f007d2
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes from 32 to [B@f0180a3
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NI2C] writeEEPROMCustomBytes start at address:32
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[write] 32: 1,0,0,0
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: command written, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: command written, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: command written, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:command written, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage command written
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: command written
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleRetry
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] writeEEPROMCustomBytes bytes written: 1
+I/flutter ( 5129): [D ACTIV]	 response from writeEEPROMCustomBytes: true
+I/flutter ( 5129): [D NIOWID]	 2-write commend success
+I/flutter ( 5129): [I NIO]	 NFCycleRetry writeCommand Success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [I NIO]	 yield: NFCycleWriteCommandSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleWriteCommandSuccess
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.completed, W:???????..., t:5
+I/flutter ( 5129): [D MSG_WID]	 block forward play ???????..., status:AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ???????..., t:5, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for transition only
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_STATE]	 renew body .....???????... ## ???????...
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl create state
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.forward
+I/flutter ( 5129): [D NIOWID]	 ### seek#5 start:
+I/flutter ( 5129): [D MSG_PROG]	 restart LinearProgressCtrlState......
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl initState
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget]
+I/flutter ( 5129): [I NIO]	 writeCommandForRead - read command, rawRecord: null
+I/flutter ( 5129): [D NIOWID]	 mock - read cycle: 6/6
+I/flutter ( 5129): [D NIOWID]	 force to read command as 0x00
+I/flutter ( 5129): [D NIOWID]	 mock - read command success: 6
+I/flutter ( 5129): [I ACTIV]	 DEMO <- isConnected
+D/demo    ( 5129): onMethodCall: isConnected
+D/FI2C    ( 5129): call isConnected
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: isConnected
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call isConnected
+I/flutter ( 5129): [I NIO]	 read command success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleSuccess
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleLogState
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleReadState
+I/flutter ( 5129): [I NIO]	 yield: NFCycleSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleSuccess
+I/flutter ( 5129): _showAnimIconMessage, EMsgType.saved, duration: 4000, id: 0e9c5ac9-e9c5-4d14-9011-e5e042cb1cd0, msg: ??????, ???log
+I/flutter ( 5129): [D MSG_STACK]	 update timer: 4000
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.saved, replace existing one, [MessengerWidget-[#4dc63]]
+I/flutter ( 5129): [I MSG_STACK]	 gen interactable messenger: ??????, ???log
+I/flutter ( 5129): [D MSG_STACK]	 set non-timeout messenger: ??????, ???log
+I/flutter ( 5129): [I NIO]	 yield: NFCycleLogState
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleLogState
+I/flutter ( 5129): [I NIO]	 nfcyle read content
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: {startAt: [16], length: 96, extra: {readCommand: false}}
+I/flutter ( 5129): [I NIO]	 yield: NFCycleReadState
+D/demo    ( 5129): onMethodCall: vibrate
+D/FI2C    ( 5129): call vibrate
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleReadState
+D/demo    ( 5129): onMethodCall: readEEPROMCustomBytes
+I/flutter ( 5129): [D NIOWID]	 showReading ui!
+I/flutter ( 5129): [D NIOWID]	 set currentCycle to 6
+D/FI2C    ( 5129): call readEEPROMCustomBytes
+I/flutter ( 5129): _showAnimIconMessage, EMsgType.loading, duration: null, id: 4f2aef5c-21c3-415d-86e2-dde5b21697b5, msg: ?????...
+D/Demo    ( 5129): ntag.readEEPROMCustomBytes from 16 to 112,
+D/Demo    ( 5129): bytes: 153,2,7,43,57,0,1,40,32,218,112,54,33,144,216,0,0,0,1,0,4,0,0,25,0,0,0,0,0,0,0,0,166,97,176,207,166,87,186,217,40,165,188,179,93,169,119,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,166,87,186,217,40,165,188,179,93,169,119,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,48,48,48
+D/Demo    ( 5129): length: 100, blocSize: 4
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.loading, add a new one, [MessengerWidget-[#4dc63], MessengerWidget-[#a0dbc]]
+D/NdeFrag ( 5129): toastMessage: successfully read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I MSG_STACK]	 gen non-interactable messenger: ?????...
+I/flutter ( 5129): [D MSG_STACK]	 set non-timeout messenger: ?????...
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.completed
+I/flutter ( 5129): [D NIOWID]	 ### seek#6 end on error...
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#7bb59]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleReadState
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleReadState
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleReadState
+I/flutter ( 5129): patrol isBusy: true
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleReadState
+I/flutter ( 5129): [D MSG_STACK]	 rebuild widget.rebuild:false
+I/flutter ( 5129): [D MSG_STACK]	 rebuild widget.rebuild:false
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call vibrate
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call readEEPROMCustomBytes
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[Demo] ntag.readEEPROMCustomBytes from 16 to 112,
+I/flutter ( 5129): bytes: 153,2,7,43,57,0,1,40,32,218,112,54,33,144,216,0,0,0,1,0,4,0,0,25,0,0,0,0,0,0,0,0,166,97,176,207,166,87,186,217,40,165,188,179,93,169,119,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,166,87,186,217,40,165,188,179,93,169,119,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,48,48,48
+I/flutter ( 5129): length: 100, blocSize: 4
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[NdeFrag] toastMessage: successfully read, tag:ndefWriteSuccess
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> toastMessage from platform, args:{msg: successfully read, error: false, tag: ndefWriteSuccess}
+I/flutter ( 5129): [I ACTIV]	 NDEFFragment -> _onToastMessage: successfully read, false, ndefWriteSuccess
+I/flutter ( 5129): [I APPBLC]	 send AppInfoMessage, msg:successfully read, id: null
+I/flutter ( 5129): [I APPBLC]	 app yield: AppInfoMessage/AppInfoMessage successfully read
+I/flutter ( 5129): [I APPMGR]	 receive appbloc event: AppInfoMessage, msg: successfully read
+I/flutter ( 5129): [I NIO]	 isBusy: true, NFCycleReadState
+I/flutter ( 5129): receive: AppInfoMessage at userPage
+I/flutter ( 5129): [I ACTIV]	 DEMO <- readEEPROMCustomBytes: [153, 2, 7, 43, 57, 0, 1, 40, 32, 218, 112, 54, 33, 144, 216, 0, 0, 0, 1, 0, 4, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 166, 97, 176, 207, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 48, 48, 48]
+I/flutter ( 5129): [I NIOWID]	 read nfc content, raw bytes: [153, 2, 7, 43, 57, 0, 1, 40, 32, 218, 112, 54, 33, 144, 216, 0, 0, 0, 1, 0, 4, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 166, 97, 176, 207, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 48, 48, 48]
+I/flutter ( 5129): record: 9902072b3900012820da70362190d80000000100040000190000000000000000a661b0cfa657bad928a5bcb35da977290000000000000000000000000000000001000000a657bad928a5bcb35da9772900000000000000000000000000000000
+I/flutter ( 5129): NDEF_RAW_RECORD: Instance of 'NtagRawRecord'
+I/flutter ( 5129): [I NIOWID]	 read nfc content, reg: instance Ntag_I2C_Registers( {tlvPlusNdef: 0, tlvSize: 0, ndefSize: 0, valid: true, data: [153, 2, 7, 43, 57, 0, 1, 40, 32, 218, 112, 54, 33, 144, 216, 0, 0, 0, 1, 0, 4, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 166, 97, 176, 207, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]} )
+I/flutter ( 5129): [I NIO]	 onReadEEPROM, re-read success! instance Ntag_I2C_Registers( {tlvPlusNdef: 0, tlvSize: 0, ndefSize: 0, valid: true, data: [153, 2, 7, 43, 57, 0, 1, 40, 32, 218, 112, 54, 33, 144, 216, 0, 0, 0, 1, 0, 4, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 166, 97, 176, 207, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 166, 87, 186, 217, 40, 165, 188, 179, 93, 169, 119, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]} )
+I/flutter ( 5129): [I NIO]	 nfcycle read success
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleReadSuccess
+I/flutter ( 5129): [I NIO]	 dispatch: NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 yield: NFCycleReadSuccess
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleReadSuccess
+I/flutter ( 5129): [D NIOWID]	 showReading success!
+I/flutter ( 5129): .... init Debouncer...
+I/flutter ( 5129): [I NIO]	 yield: NFCycleReadLogState
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleReadLogState
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget-[#4dc63], MessengerWidget-[#a0dbc]]
+I/flutter ( 5129): [D MSG_WID]	 initState ??????, ???log
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.dismissed, W:??????, ???log, t:0
+I/flutter ( 5129): [D MSG_WID]	 forward play ??????, ???log, status:AnimationStatus.dismissed
+I/flutter ( 5129): controller stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 ??????, ???log, stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ??????, ???log, t:0, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for interact mode
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_WID]	 initState ?????...
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.dismissed, W:?????..., t:1
+I/flutter ( 5129): [D MSG_WID]	 forward play ?????..., status:AnimationStatus.dismissed
+I/flutter ( 5129): controller stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 ?????..., stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ?????..., t:1, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for transition only
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D MSG_STATE]	 renew body .....?????... ## ?????...
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#43621]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): patrol isBusy: false
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl create state
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_PROG]	 restart LinearProgressCtrlState......
+I/flutter ( 5129): [D MSG_PROG]	 LinearProgressCtrl initState
+I/flutter ( 5129): [D MSG_WID]	 remove stackMessenger: ???????...
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): controller stat: AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 ??????, ???log, stat: AnimationStatus.completed
+I/flutter ( 5129): anim completed
+I/flutter ( 5129): [D MSG_STACK]	 non-stack messenger onComplete... ??????, ???log, du:4000, g: EMsgType.saved
+I/flutter ( 5129): [D MSG_STACK]	 reverse debouncer: Instance of 'Debouncer'
+I/flutter ( 5129): controller stat: AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 ?????..., stat: AnimationStatus.completed
+I/flutter ( 5129): anim completed
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget-[#4dc63], MessengerWidget-[#a0dbc]]
+I/flutter ( 5129): [D COMMON]	 initAnimation status: AnimationStatus.completed
+I/flutter ( 5129): _showAnimIconMessage, EMsgType.loaded, duration: 4000, id: 4f2aef5c-21c3-415d-86e2-dde5b21697b5, msg: ????!!
+I/flutter ( 5129): [D MSG_STACK]	 new timer: 4000
+I/flutter ( 5129): .... init Debouncer...
+I/flutter ( 5129): [D MSG_STACK]	 addStateMsg EMsgType.loaded, replace existing one, [MessengerWidget-[#4dc63], MessengerWidget-[#574f2]]
+I/flutter ( 5129): [I MSG_STACK]	 gen interactable messenger: ????!!
+I/flutter ( 5129): [D MSG_STACK]	 set non-timeout messenger: ????!!
+I/flutter ( 5129): [I AppMain]	 route name: /cycleIOPatrol/result
+I/flutter ( 5129): [I Route]	 currentNav: EZoomNavs.patrolResult, pageNav: EZoomNavs.patrol, sub: {EZoomNavs.patrolResult, EZoomNavs.patrolSub}, link: /cycleIOPatrol/result
+I/flutter ( 5129): [I Route]	 create exit page on EZoomNavs.patrol, enter page on EZoomNavs.patrolResult
+I/flutter ( 5129): [I Route]	 pageRouteInit: EZoomNavs.patrol/EZoomNavs.patrol
+I/flutter ( 5129): [I Route]	 pageRouteInit: EZoomNavs.patrolResult/EZoomNavs.patrol
+I/flutter ( 5129): [I Route]	 buildRoute, enterPage: EZoomNavs.patrolResult/EZoomNavs.patrol, exitPage : EZoomNavs.patrol/EZoomNavs.patrol
+I/flutter ( 5129): [I Route]	 transition enter:NFCycleIOPatrolPage, exit:NFCycleIOPatrolPage
+I/flutter ( 5129): [I CYCLE]	 instantiate3 build: nav: EZoomNavs.patrol, pagenav: EZoomNavs.patrol
+I/flutter ( 5129): [I CYCLE]	 instantiate subRoute: EZoomNavs.patrol, pageNav: EZoomNavs.patrol, type: NFCycleIOPatrolPage
+I/flutter ( 5129): [I Impl]	 init store path: /sdcard/Documents/nfcio.log
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): NFCReceivableWidget init
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [I CYCLE]	 instantiate3 build: nav: EZoomNavs.patrolResult, pagenav: EZoomNavs.patrol
+I/flutter ( 5129): [I CYCLE]	 instantiate subRoute: EZoomNavs.patrolResult, pageNav: EZoomNavs.patrol, type: NFCycleIOPatrolPage
+I/flutter ( 5129): .... init Debouncer...
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [D MSG_STACK]	 rebuild widget.rebuild:false
+I/flutter ( 5129): [D NIOWID]	 onCycleReceive, state: NFCycleReadLogState
+I/flutter ( 5129): NFCReceivableWidget receive: RegisterSessionResponseState
+I/flutter ( 5129): [D NIOWID]	 onNDEFReceive RegisterSessionResponseState, message: null
+D/demo    ( 5129): onMethodCall: scanFile
+D/FI2C    ( 5129): call scanFile
+I/flutter ( 5129):
+I/flutter ( 5129): build AppLevelMessage, [EMsgType.stack]
+I/flutter ( 5129): buildPendingAnims: (EMsgType.stack)
+I/flutter ( 5129): [I Route]	 transition enter:NFCycleIOPatrolPage, exit:NFCycleIOPatrolPage
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget-[#4dc63], MessengerWidget-[#574f2]]
+I/flutter ( 5129): [D MSG_WID]	 initState ????!!
+I/flutter ( 5129): [D MSG_WID]	 play true, S:AnimationStatus.dismissed, W:????!!, t:0
+I/flutter ( 5129): [D MSG_WID]	 forward play ????!!, status:AnimationStatus.dismissed
+I/flutter ( 5129): controller stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 ????!!, stat: AnimationStatus.forward
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ????!!, t:0, fw:true
+I/flutter ( 5129): [D MSG_WID]	 build for interact mode
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+D/scanFile( 5129): /sdcard/Documents/logs/ntagLog.log
+I/flutter ( 5129): NFCReceivableWidget init
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#8364e]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): patrol isBusy: false
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [D MSG_WID]	 remove stackMessenger: ?????...
+I/flutter ( 5129): NFCReceivableWidget receive: RegisterSessionResponseState
+I/flutter ( 5129): [D NIOWID]	 onNDEFReceive RegisterSessionResponseState, message: null
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: scanFile
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call scanFile
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[scanFile] /sdcard/Documents/logs/ntagLog.log
+D/demo    ( 5129): onMethodCall: scanFile
+D/FI2C    ( 5129): call scanFile
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: scanFile
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call scanFile
+I/flutter ( 5129): [I Route]	 transition enter:NFCycleIOPatrolPage, exit:NFCycleIOPatrolPage
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget-[#4dc63], MessengerWidget-[#574f2]]
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#aefc5]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): patrol isBusy: false
+D/scanFile( 5129): /sdcard/Documents/logs/ntagLog.log
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[scanFile] /sdcard/Documents/logs/ntagLog.log
+I/flutter ( 5129): controller stat: AnimationStatus.completed
+I/flutter ( 5129): [D MSG_WID]	 ????!!, stat: AnimationStatus.completed
+I/flutter ( 5129): anim completed
+I/flutter ( 5129): [D MSG_STACK]	 non-stack messenger onComplete... ????!!, du:4000, g: EMsgType.loaded
+I/flutter ( 5129): [D MSG_STACK]	 reverse debouncer: Instance of 'Debouncer'
+I/flutter ( 5129): [I Route]	 transition enter:NFCycleIOPatrolPage, exit:NFCycleIOPatrolPage
+I/flutter ( 5129): [I AppLay]	 pass nfc test: ENFCState.NFC_AVAILABLE
+I/flutter ( 5129): BreadButton recolor: Color(0xff546e7a)
+I/flutter ( 5129): [I Route]	 getPage by currentNav: EZoomNavs.patrol on pageNav ?
+I/flutter ( 5129): [I Route]	 handle nav: EZoomNavs.patrol
+I/flutter ( 5129): [I Route]	 pageRouteInit: EZoomNavs.patrol/EZoomNavs.patrol
+I/flutter ( 5129): build zoom menu, showPatrol: true, showUop: true, showUrst: true, showInitial: true
+I/flutter ( 5129): [I CYCLE]	 instantiate3 build: nav: EZoomNavs.patrol, pagenav: EZoomNavs.patrol
+I/flutter ( 5129): [I CYCLE]	 instantiate subRoute: EZoomNavs.patrol, pageNav: EZoomNavs.patrol, type: NFCycleIOPatrolPage
+I/flutter ( 5129): [I Impl]	 init store path: /sdcard/Documents/nfcio.log
+I/flutter ( 5129): [D NIOWID]	 buildTagContent, fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): buildNDEFInfo, widget.fieldPermission: <PatrolFieldPermission( patrol )>
+I/flutter ( 5129): [D nrecord]	 NDEFInfoGraphic, patrol states: [PatrolWidget-[LabeledGlobalKey<PatrolWidgetState>#8bca7]]
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): get grease cup type: 1/Dorcas150
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): patrol isBusy: false
+I/flutter ( 5129): [I NIO]	 isBusy: false, NFCycleReadLogState
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onCompleted: success
+D/demo    ( 5129): onMethodCall: scanFile
+D/FI2C    ( 5129): call scanFile
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[demo] onMethodCall: scanFile
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[FI2C] call scanFile
+D/scanFile( 5129): /sdcard/Documents/logs/ntagLog.log
+I/flutter ( 5129): [I ACTIV]	 NtagI2CDemo -> onLogToDart from platform, args:[scanFile] /sdcard/Documents/logs/ntagLog.log
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onCompleted: success
+I/flutter ( 5129): [D MSG_STACK]	 call reverseMessage
+I/flutter ( 5129): [D MSG_WID]	 play false, S:AnimationStatus.completed, W:??????, ???log, t:0
+I/flutter ( 5129): [D MSG_WID]	 backward play ??????, ???log, status:AnimationStatus.completed
+I/flutter ( 5129): controller stat: AnimationStatus.reverse
+I/flutter ( 5129): [D MSG_WID]	 ??????, ???log, stat: AnimationStatus.reverse
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ??????, ???log, t:0, fw:false
+I/flutter ( 5129): [D MSG_WID]	 build for interact mode
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): controller stat: AnimationStatus.dismissed
+I/flutter ( 5129): [D MSG_WID]	 ??????, ???log, stat: AnimationStatus.dismissed
+I/flutter ( 5129): anim dismissed
+I/flutter ( 5129): [D MSG_STACK]	 onReverse completed, removeMessage: ??????, ???log
+I/flutter ( 5129): [D MSG_STACK]	 remove1 EMsgType.saved, [MessengerWidget-[#4dc63], MessengerWidget-[#574f2]]
+I/flutter ( 5129): [D MSG_STACK]	 remove2 EMsgType.saved, [MessengerWidget-[#574f2]]
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: [MessengerWidget-[#574f2]]
+I/flutter ( 5129): [D MSG_STACK]	 call reverseMessage
+I/flutter ( 5129): [D MSG_WID]	 play false, S:AnimationStatus.completed, W:????!!, t:0
+I/flutter ( 5129): [D MSG_WID]	 backward play ????!!, status:AnimationStatus.completed
+I/flutter ( 5129): controller stat: AnimationStatus.reverse
+I/flutter ( 5129): [D MSG_WID]	 ????!!, stat: AnimationStatus.reverse
+I/flutter ( 5129): [D MSG_WID]	 build MessageWidget ????!!, t:0, fw:false
+I/flutter ( 5129): [D MSG_WID]	 build for interact mode
+I/flutter ( 5129): [D MSG_TRANS]	 build MessageTransition1
+I/flutter ( 5129): actor initialize
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): onStart: success
+I/flutter ( 5129): onStart: error
+I/flutter ( 5129): animIcon - pending anim.....
+I/flutter ( 5129): controller stat: AnimationStatus.dismissed
+I/flutter ( 5129): [D MSG_WID]	 ????!!, stat: AnimationStatus.dismissed
+I/flutter ( 5129): anim dismissed
+I/flutter ( 5129): [D MSG_STACK]	 onReverse completed, removeMessage: ????!!
+I/flutter ( 5129): [D MSG_STACK]	 remove1 EMsgType.loaded, [MessengerWidget-[#574f2]]
+I/flutter ( 5129): [D MSG_STACK]	 remove2 EMsgType.loaded, []
+I/flutter ( 5129): [D MSG_STACK]	 onStackEmpty
+I/flutter ( 5129): [D MSG_STACK]	 build StackMessageWidgetState, isEmpty: []
