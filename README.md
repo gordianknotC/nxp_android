@@ -1,10 +1,11 @@
 
-__2018 android nfc(npx/flutter) 專案__
+__2018 android nfc(npx/flutter) 專案, 待整理, 參考不建議使用__
 
 分為 flutter 前端及 android 原生端開發，
-原生端開發使用 NXP sdk 及 flutter 串接，這裡沒有放 flutter 原代碼，只有放 android 端與 
-flutter channel 與 NXP 溝通實作部份, 見 
-[MainActivity](./android/app/src/main/kotlin/com/gknot/MainActivity.kt)
+原生端開發使用 NXP sdk 及 flutter 串接，這裡只放部份代碼，只放 android 端與 
+flutter channel 與 NXP 溝通相關實作部份, 見 
+
+- [MainActivity.kt](./android/app/src/main/kotlin/com/gknot/MainActivity.kt)
 ```kotlin
 class MainActivity : FlutterActivity() {
     private fun registerPlugins(registry: PluginRegistry): Unit {
@@ -32,6 +33,9 @@ class MainActivity : FlutterActivity() {
     }
 }
 ```
+
+- [channels.dart](./lib/platform/channels.dart)
+- [activities.dart](./lib/platform/activities.dart)
 
 
 # nxp
