@@ -1,0 +1,603 @@
+@startuml
+
+title __ACTIVITIES's Class Diagram__\n
+
+  package com.nxp.nfc_demo.activities {
+    class AuthActivity {
+        {static} + REQUEST_FILE_CHOOSER : int
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        {static} + mContext : Context
+        - statusText : TextView
+        - passwd1Button : Button
+        - passwd2Button : Button
+        - passwd3Button : Button
+        {static} - task : authTask
+        {static} - mTag : Tag
+        + onCreate()
+        + onPause()
+        + onResume()
+        + onClick()
+        # onNewIntent()
+        - startDemo()
+        + authCompleted()
+        + updateAuthStatus()
+        + showDisableAuthenticationDialog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    enum AuthStatus {
+      Disabled
+      Unprotected
+      Authenticated
+      Protected_W
+      Protected_RW
+      Protected_W_SRAM
+      Protected_RW_SRAM
+      status
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    enum Pwds {
+      PWD1
+      PWD2
+      PWD3
+      pwd
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class authTask {
+        + dialog : ProgressDialog
+        # onPostExecute()
+        # doInBackground()
+        # onPreExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class DebugActivity {
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        - tag : Tag
+        - view : WebView
+        + onCreate()
+        + onPause()
+        + onResume()
+        # onNewIntent()
+        + obtainAuthStatus()
+        {static} - byteArrayToHex()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class JSInterface {
+        ~ JSInterface()
+        + sendLog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    enum RESULT {
+      OK
+      ERROR
+      WARNING
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class TestTask {
+        # doInBackground()
+        # onProgressUpdate()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    abstract class Test {
+        ~ name : String
+        + Test()
+        {abstract} + execute()
+        # updateResults()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class SampleTest {
+        + SampleTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class Mfu_transceiveTest {
+        - data : byte[]
+        + Mfu_transceiveTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class Nfca_transceiveTest {
+        - data : byte[]
+        + Nfca_transceiveTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class NfcaSectorSelectWriteTest {
+        + NfcaSectorSelectWriteTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class NfcaSectorSelectReadTest {
+        + NfcaSectorSelectReadTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class NfcaSectorSelectReadWriteTest {
+        + NfcaSectorSelectReadWriteTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class MfuSectorSelectWriteTest {
+        + MfuSectorSelectWriteTest()
+        + execute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class FlashMemoryActivity {
+        {static} + REQUEST_FILE_CHOOSER : int
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        - filePath : TextView
+        - dataRateCallback : TextView
+        {static} - dialog : ProgressDialog
+        {static} - task : flashTask
+        - isAppFW : boolean
+        - indexFW : int
+        - bytesToFlash : byte[]
+        {static} - mContext : Context
+        + onCreate()
+        + onPause()
+        # onActivityResult()
+        + onResume()
+        - startFileChooser()
+        # onNewIntent()
+        - readFileAssets()
+        - readFileMemory()
+        - startDemo()
+        + showAuthDialog()
+        + flashCompleted()
+        + showAboutDialog()
+        {static} + setFLashDialogMax()
+        {static} + updateFLashDialog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class flashTask {
+        - timeToFlashFirmware : long
+        + dialog : ProgressDialog
+        # onPostExecute()
+        # doInBackground()
+        # onPreExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class HelpActivity {
+        + onCreate()
+        + onPause()
+        + onBackPressed()
+        + onResume()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class MainActivity {
+        {static} + EXTRA_MESSAGE : String
+        {static} + AUTH_REQUEST : int
+        {static} + demo : Ntag_I2C_Demo
+        - mTabHost : TabHost
+        - mViewPager : ViewPager
+        - mPendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        {static} + PACKAGE_NAME : String
+        {static} - appVersion : String
+        {static} - boardFirmwareVersion : String
+        {static} - mIntent : Intent
+        - mAuthMenuItem : MenuItem
+        {static} - mAuthStatus : int
+        {static} - mPassword : byte[]
+        {static} + getmIntent()
+        {static} + setBoardFirmwareVersion()
+        # onCreate()
+        - checkNFC()
+        + onPause()
+        + onResume()
+        + onDestroy()
+        # onActivityResult()
+        # onNewIntent()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        + doProcess()
+        - launchDemo()
+        - obtainAuthStatus()
+        {static} + launchNdefDemo()
+        + sendFeedback()
+        + showHlepDialog()
+        + showDebugDialog()
+        + showAboutDialog()
+        + showFlashDialog()
+        + showAuthDialog()
+        + setNfcForeground()
+        + updateAuthIcon()
+        {static} + getAuthStatus()
+        {static} + getPassword()
+        {static} + getNfcIntent()
+        {static} + setAuthStatus()
+        {static} + setPassword()
+        {static} + setNfcIntent()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class ReadMemoryActivity {
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        {static} - mContext : Context
+        {static} + ll : LinearLayout
+        {static} + datarateCallback : TextView
+        ~ dialog : ProgressDialog
+        + onCreate()
+        + onPause()
+        + onResume()
+        # onActivityResult()
+        # onNewIntent()
+        - startDemo()
+        + showAuthDialog()
+        + setContent()
+        + setDataRate()
+        # showAboutDialog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class readTask {
+        - timeToReadMemory : long
+        # onPostExecute()
+        # doInBackground()
+        # onPreExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class RegisterConfigActivity {
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        {static} - ChipInfo_1_text : TextView
+        {static} - ChipInfo_2_text : TextView
+        {static} - I2C_RST_switch : Switch
+        {static} - FD_OFF_spinner : Spinner
+        {static} - FD_ON_spinner : Spinner
+        {static} - LAST_NDEF_PAGE_edit : TextView
+        {static} - PTHRU_DIR_switch : Switch
+        {static} - WRITE_ACCESS_switch : Switch
+        {static} - SRAM_MIRROR_PAGE_edit_edit : TextView
+        {static} - I2C_WD_LS_Timer_edit : TextView
+        {static} - I2C_WD_MS_edit : TextView
+        {static} - I2C_CLOCK_STR_switch : Switch
+        {static} - PLUS_AUTH0_edit : TextView
+        {static} - PLUS_NFC_Prot_switch : Switch
+        {static} - PLUS_NFC_Disc_Sec1_switch : Switch
+        {static} - PLUS_AUTHLim_edit : TextView
+        {static} - PLUS_2K_Prot_switch : Switch
+        {static} - PLUS_Sram_Prot_switch : Switch
+        {static} - PLUS_I2C_Prot_edit : TextView
+        {static} - readConfigButton : Button
+        {static} - writeConfigButton : Button
+        {static} - layoutPlusAuthVisible : LinearLayout
+        - layoutChipInfo : LinearLayout
+        - rlChipInfo : RelativeLayout
+        - layoutFD : LinearLayout
+        - rlFD : RelativeLayout
+        - layoutPT : LinearLayout
+        - rlPT : LinearLayout
+        - layoutMemory : LinearLayout
+        - rlMemory : RelativeLayout
+        - layoutI2C : LinearLayout
+        - rlI2C : RelativeLayout
+        - layoutPlusAuth : LinearLayout
+        - rlPlusAuth : RelativeLayout
+        - imageChipInfo : ImageView
+        - imageFD : ImageView
+        - imagePT : ImageView
+        - imageSram : ImageView
+        - imageI2C : ImageView
+        - imagePlus : ImageView
+        - layout_read : LinearLayout
+        - layout_buttons : LinearLayout
+        - scroll_regs : ScrollView
+        - layoutChipInfoExpanded : boolean
+        - layoutFDExpanded : boolean
+        - layoutPTExpanded : boolean
+        - layoutMemoryExpanded : boolean
+        - layoutI2CExpanded : boolean
+        - layoutPlusAuthExpanded : boolean
+        {static} - option : String
+        {static} - writeChosen : boolean
+        {static} - NC_Reg : int
+        {static} - LD_Reg : int
+        {static} - SM_Reg : int
+        {static} - NS_Reg : int
+        {static} - WD_LS_Reg : int
+        {static} - WD_MS_Reg : int
+        {static} - I2C_CLOCK_STR : int
+        {static} - PLUS_AUTH0_REG : int
+        {static} - PLUS_ACCESS_REG : int
+        {static} - PLUS_PT_I2C_REG : int
+        {static} - FD_OFF_Value : int
+        {static} - FD_ON_Value : int
+        - isWriteProtected : boolean
+        + onCreate()
+        + onPause()
+        + onResume()
+        # onActivityResult()
+        # onNewIntent()
+        - startDemo()
+        + showAuthDialog()
+        + onCheckedChanged()
+        + onClick()
+        {static} + getOption()
+        {static} + setAnswer()
+        {static} + setAnswerPlus()
+        {static} + calcConfiguration()
+        {static} + isWriteChosen()
+        {static} + getNC_Reg()
+        {static} + getLD_Reg()
+        {static} + getSM_Reg()
+        {static} + getNS_Reg()
+        {static} + getWD_LS_Reg()
+        {static} + getWD_MS_Reg()
+        {static} + getI2C_CLOCK_STR()
+        {static} + getAuth0()
+        {static} + getAccess()
+        {static} + getPTI2C()
+        {static} + setNC_Reg()
+        {static} + setLD_Reg()
+        {static} + setSM_Reg()
+        {static} + setNS_Reg()
+        {static} + setWD_LS_Reg()
+        {static} + setWD_MS_Reg()
+        {static} + setI2C_CLOCK_STR()
+        {static} + setPlus_Auth0_Reg()
+        {static} + setPlus_Access_Reg()
+        {static} + setPlus_Pti2c_Reg()
+        + showAboutDialog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class RegisterSessionActivity {
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        {static} - IC_Manufacturer_text : TextView
+        {static} - Mem_size_text : TextView
+        {static} - FD_OFF_text : TextView
+        {static} - FD_ON_text : TextView
+        {static} - LAST_NDEF_Page_text : TextView
+        {static} - SRAM_Mirror_Reg_text : TextView
+        {static} - WD_LS_Reg_text : TextView
+        {static} - WD_MS_Reg_text : TextView
+        {static} - I2C_RST_ON_OFF_checkbox : CheckBox
+        {static} - NDEF_DATA_READ_checkbox : CheckBox
+        {static} - RF_FIELD_PRESENT_checkbox : CheckBox
+        {static} - PT_ON_OFF_checkbox : CheckBox
+        {static} - I2C_LOCKED_checkbox : CheckBox
+        {static} - RF_LOCKED_checkbox : CheckBox
+        {static} - SRAM_I2C_ready_checkbox : CheckBox
+        {static} - SRAM_RF_ready_checkbox : CheckBox
+        {static} - PT_DIR_checkbox : CheckBox
+        {static} - SRAM_Miror_checkbox : CheckBox
+        {static} - CI2C_CLOCK_STR_checkbox : CheckBox
+        - layoutChipInfo : LinearLayout
+        - rlChipInfo : RelativeLayout
+        - layoutNtagConfig : LinearLayout
+        - rlNtagConfig : RelativeLayout
+        - layoutFD : LinearLayout
+        - rlFD : RelativeLayout
+        - layoutPT : LinearLayout
+        - rlPT : RelativeLayout
+        - layoutSram : LinearLayout
+        - rlSram : RelativeLayout
+        - layoutI2C : LinearLayout
+        - rlI2C : RelativeLayout
+        - imageChipInfo : ImageView
+        - imageNtagConfig : ImageView
+        - imageFD : ImageView
+        - imagePT : ImageView
+        - imageSram : ImageView
+        - imageI2C : ImageView
+        - layoutChipInfoExpanded : boolean
+        - layoutNtagConfigExpanded : boolean
+        - layoutFDExpanded : boolean
+        - layoutPTExpanded : boolean
+        - layoutSramExpanded : boolean
+        - layoutI2CExpanded : boolean
+        - layout_read : LinearLayout
+        - scroll_regs : ScrollView
+        # onCreate()
+        + onPause()
+        + onResume()
+        # onActivityResult()
+        # onNewIntent()
+        - startDemo()
+        + showAuthDialog()
+        {static} + SetAnswer()
+        + showAboutDialog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class ResetMemoryActivity {
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        - dialog : ProgressDialog
+        {static} + mContext : Context
+        {static} + dataRate_callback : TextView
+        + onCreate()
+        + onPause()
+        + onResume()
+        # onActivityResult()
+        # onNewIntent()
+        - startDemo()
+        + showAuthDialog()
+        + setDataRate()
+        + contentReseted()
+        + showAboutDialog()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class resetTask {
+        - timeToResetMemory : long
+        # onPostExecute()
+        # doInBackground()
+        # onPreExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class SplashActivity {
+        {static} + TAG : String
+        - contador : CountDownTimer
+        # onCreate()
+        + onBackPressed()
+        # onStop()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.activities {
+    class VersionInfoActivity {
+        - pendingIntent : PendingIntent
+        - mAdapter : NfcAdapter
+        {static} - Board_Version_text : TextView
+        {static} - boardFwVersionText : TextView
+        - versionInformation : LinearLayout
+        - versionInformationInfo : RelativeLayout
+        - imageVersion : ImageView
+        - layoutRead : LinearLayout
+        - sconfVer : ScrollView
+        - VersionInfoExpanded : boolean
+        + onCreate()
+        + onPause()
+        + onBackPressed()
+        + onResume()
+        # onActivityResult()
+        # onNewIntent()
+        - startDemo()
+        + showAuthDialog()
+        {static} + setBoardVersion()
+        {static} + setBoardFWVersion()
+    }
+  }
+  
+
+  AuthActivity -up-|> OnClickListener
+  AuthActivity -up-|> Activity
+  AuthActivity o-- Ntag_I2C_Demo : demo
+  AuthActivity +-down- AuthStatus
+  AuthActivity +-down- Pwds
+  AuthActivity +-down- authTask
+  authTask -up-|> AsyncTask
+  DebugActivity -up-|> Activity
+  DebugActivity +-down- JSInterface
+  DebugActivity +-down- RESULT
+  DebugActivity +-down- TestTask
+  TestTask -up-|> AsyncTask
+  TestTask +-down- Test
+  TestTask +-down- SampleTest
+  TestTask +-down- Mfu_transceiveTest
+  TestTask +-down- Nfca_transceiveTest
+  TestTask +-down- NfcaSectorSelectWriteTest
+  TestTask +-down- NfcaSectorSelectReadTest
+  TestTask +-down- NfcaSectorSelectReadWriteTest
+  TestTask +-down- MfuSectorSelectWriteTest
+  SampleTest -up-|> Test
+  Mfu_transceiveTest -up-|> Test
+  Nfca_transceiveTest -up-|> Test
+  NfcaSectorSelectWriteTest -up-|> Test
+  NfcaSectorSelectReadTest -up-|> Test
+  NfcaSectorSelectReadWriteTest -up-|> Test
+  MfuSectorSelectWriteTest -up-|> Test
+  FlashMemoryActivity -up-|> Activity
+  FlashMemoryActivity o-- Ntag_I2C_Demo : demo
+  FlashMemoryActivity +-down- flashTask
+  flashTask -up-|> AsyncTask
+  HelpActivity -up-|> Activity
+  MainActivity -up-|> FragmentActivity
+  MainActivity o-- TabsAdapter : mTabsAdapter
+  ReadMemoryActivity -up-|> Activity
+  ReadMemoryActivity o-- Ntag_I2C_Demo : demo
+  ReadMemoryActivity +-down- readTask
+  readTask -up-|> AsyncTask
+  RegisterConfigActivity -up-|> OnClickListener
+  RegisterConfigActivity -up-|> OnCheckedChangeListener
+  RegisterConfigActivity -up-|> Activity
+  RegisterConfigActivity o-- Ntag_I2C_Demo : demo
+  RegisterSessionActivity -up-|> Activity
+  RegisterSessionActivity o-- Ntag_I2C_Demo : demo
+  ResetMemoryActivity -up-|> Activity
+  ResetMemoryActivity o-- Ntag_I2C_Demo : demo
+  ResetMemoryActivity +-down- resetTask
+  resetTask -up-|> AsyncTask
+  SplashActivity -up-|> Activity
+  VersionInfoActivity -up-|> Activity
+  VersionInfoActivity o-- Ntag_I2C_Demo : demo
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

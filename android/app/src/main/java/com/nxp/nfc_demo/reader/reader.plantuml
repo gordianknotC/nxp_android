@@ -1,0 +1,588 @@
+@startuml
+
+title __READER's Class Diagram__\n
+
+  package com.nxp.nfc_demo.reader {
+    abstract class I2C_Enabled_Commands {
+        # SRAMSize : int
+        # blockSize : int
+        {static} + get()
+        + getSRAMSize()
+        + getBlockSize()
+        {abstract} + close()
+        {abstract} + connect()
+        {abstract} + isConnected()
+        {abstract} + getLastAnswer()
+        {abstract} + getProduct()
+        {abstract} + getSessionRegisters()
+        {abstract} + getConfigRegisters()
+        {abstract} + getConfigRegister()
+        {abstract} + getSessionRegister()
+        {abstract} + writeConfigRegisters()
+        {abstract} + checkPTwritePossible()
+        {abstract} + waitforI2Cwrite()
+        {abstract} + waitforI2Cread()
+        {abstract} + writeEEPROM()
+        {abstract} + writeEEPROM()
+        {abstract} + readEEPROM()
+        {abstract} + writeSRAMBlock()
+        {abstract} + writeSRAM()
+        {abstract} + readSRAMBlock()
+        {abstract} + readSRAM()
+        {abstract} + writeEmptyNdef()
+        {abstract} + writeDefaultNdef()
+        {abstract} + writeDeliveryNdef()
+        {abstract} + writeNDEF()
+        {abstract} + authenticatePlus()
+        {abstract} + protectPlus()
+        {abstract} + unprotectPlus()
+        {abstract} + getProtectionPlus()
+        {abstract} + getAccessRegister()
+        {abstract} + getPTI2CRegister()
+        {abstract} + getAuth0Register()
+        {abstract} + writeAuthRegisters()
+        {abstract} + readNDEF()
+        # concat()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum R_W_Methods {
+      Fast_Mode
+      Polling_Mode
+      Error
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum NS_Reg_Func {
+      RF_FIELD_PRESENT
+      EEPROM_WR_BUSY
+      EEPROM_WR_ERR
+      SRAM_RF_READY
+      SRAM_I2C_READY
+      RF_LOCKED
+      I2C_LOCKED
+      NDEF_DATA_READ
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum NC_Reg_Func {
+      PTHRU_DIR
+      SRAM_MIRROR_ON_OFF
+      FD_ON
+      FD_OFF
+      PTHRU_ON_OFF
+      I2C_RST_ON_OFF
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum CR_Offset {
+      NC_REG
+      LAST_NDEF_PAGE
+      SM_REG
+      WDT_LS
+      WDT_MS
+      I2C_CLOCK_STR
+      REG_LOCK
+      FIXED
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum SR_Offset {
+      NC_REG
+      LAST_NDEF_PAGE
+      SM_REG
+      WDT_LS
+      WDT_MS
+      I2C_CLOCK_STR
+      NS_REG
+      FIXED
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum Access_Offset {
+      NFC_PROT
+      NFC_DIS_SEC1
+      AUTH_LIM
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum PT_I2C_Offset {
+      K2_PROT
+      SRAM_PROT
+      I2C_PROT
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class MinimalNtag_I2C_Commands {
+        - firstSectorMemsize : int
+        - mfu : MifareUltralight
+        - answer : byte[]
+        {static} - waitTime : int
+        + MinimalNtag_I2C_Commands()
+        + close()
+        + connect()
+        + isConnected()
+        + getLastAnswer()
+        + getProduct()
+        + getSessionRegisters()
+        + getSessionRegister()
+        + getConfigRegisters()
+        + getConfigRegister()
+        + writeConfigRegisters()
+        + waitforI2Cwrite()
+        + waitforI2Cread()
+        + writeEEPROM()
+        + writeEEPROM()
+        + readEEPROM()
+        + writeSRAMBlock()
+        + writeSRAM()
+        + readSRAMBlock()
+        + readSRAM()
+        + writeEmptyNdef()
+        + writeDefaultNdef()
+        + writeDeliveryNdef()
+        + writeNDEF()
+        + readNDEF()
+        - createRawNdefTlv()
+        + checkPTwritePossible()
+        + authenticatePlus()
+        + protectPlus()
+        + unprotectPlus()
+        + getProtectionPlus()
+        + getAuth0Register()
+        + getAccessRegister()
+        + getPTI2CRegister()
+        + writeAuthRegisters()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum Register {
+      Session
+      Configuration
+      SRAM_Begin
+      User_memory_Begin
+      UID
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class Ntag_Commands {
+        - currentSec : byte
+        - sectorSelectTimout : int
+        - timeout : int
+        - answer : byte[]
+        - command : byte[]
+        - nfca : NfcA
+        + Ntag_Commands()
+        + close()
+        + connect()
+        + isConnected()
+        + getLastCommand()
+        + getLastAnswer()
+        + SectorSelect()
+        + fast_write()
+        + write()
+        + fast_read()
+        + read()
+        + getVersion()
+        + pwdAuth()
+        + getMaxTransceiveLength()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class Ntag_Get_Version {
+        - vendor_ID : byte
+        - product_type : byte
+        - product_subtype : byte
+        - major_product_version : byte
+        - minor_product_version : byte
+        - storage_size : byte
+        - protocol_type : byte
+        {static} + NTAG_I2C_1k : Ntag_Get_Version
+        {static} + NTAG_I2C_1k_T : Ntag_Get_Version
+        {static} + NTAG_I2C_1k_V : Ntag_Get_Version
+        {static} + NTAG_I2C_2k : Ntag_Get_Version
+        {static} + NTAG_I2C_2k_T : Ntag_Get_Version
+        {static} + NTAG_I2C_2k_V : Ntag_Get_Version
+        {static} + NTAG_I2C_1k_Plus : Ntag_Get_Version
+        {static} + NTAG_I2C_2k_Plus : Ntag_Get_Version
+        {static} + MTAG_I2C_1k : Ntag_Get_Version
+        {static} + MTAG_I2C_2k : Ntag_Get_Version
+        {static} + TNPI_6230 : Ntag_Get_Version
+        {static} + TNPI_3230 : Ntag_Get_Version
+        + Get_Product()
+        + Ntag_Get_Version()
+        - init()
+        + Ntag_Get_Version()
+        + equals()
+        + getVendor_ID()
+        + getProduct_type()
+        + getProduct_subtype()
+        + getMajor_product_version()
+        + getMinor_product_version()
+        + getStorage_size()
+        + getProtocol_type()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum Prod {
+      NTAG_I2C_1k
+      NTAG_I2C_2k
+      NTAG_I2C_1k_T
+      NTAG_I2C_2k_T
+      NTAG_I2C_1k_V
+      NTAG_I2C_2k_V
+      NTAG_I2C_1k_Plus
+      NTAG_I2C_2k_Plus
+      Unknown
+      MTAG_I2C_1k
+      MTAG_I2C_2k
+      mem_size
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class Ntag_I2C_Commands {
+        {static} - DEFAULT_NDEF_MESSAGE_SIZE : int
+        {static} - EMPTY_NDEF_MESSAGE_SIZE : int
+        {static} - SRAM_SIZE : int
+        {static} - SRAM_BLOCK_SIZE : int
+        - tag : Tag
+        - answer : byte[]
+        - sramSector : byte
+        - TimeOut : boolean
+        - lock : Object
+        + Ntag_I2C_Commands()
+        + close()
+        + connect()
+        + isConnected()
+        + getLastAnswer()
+        + getProduct()
+        + getSessionRegisters()
+        + getSessionRegister()
+        + getConfigRegisters()
+        + getConfigRegister()
+        + writeConfigRegisters()
+        + waitforI2Cwrite()
+        + waitforI2Cread()
+        + writeEEPROM()
+        + writeEEPROM()
+        + readEEPROM()
+        + writeSRAMBlock()
+        + authenticatePlus()
+        + protectPlus()
+        + unprotectPlus()
+        + getProtectionPlus()
+        + getAuth0Register()
+        + getAccessRegister()
+        + getPTI2CRegister()
+        + writeAuthRegisters()
+        + writeSRAM()
+        + readSRAMBlock()
+        + readSRAM()
+        + writeEmptyNdef()
+        + writeDefaultNdef()
+        + writeDeliveryNdef()
+        + writeNDEF()
+        + readNDEF()
+        - createRawNdefTlv()
+        + checkPTwritePossible()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    enum Register {
+      Session
+      Session_PLUS
+      Configuration
+      SRAM_Begin
+      Capability_Container
+      User_memory_Begin
+      UID
+      AUTH0
+      ACCESS
+      PWD
+      PACK
+      PT_I2C
+      value
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class Ntag_I2C_Demo {
+        - main : Activity
+        - tag : Tag
+        {static} - LAST_FOUR_BYTES : int
+        {static} - DELAY_TIME : int
+        {static} - TRAILS : int
+        {static} - DATA_SEND_BYTE : int
+        {static} - VERSION_BYTE : int
+        {static} - GET_VERSION_NR : int
+        {static} - GET_FW_NR : int
+        {static} - THREE_BYTES : int
+        {static} - PAGE_SIZE : int
+        + setBoardVersionHandler()
+        + setShowAlertHandler()
+        + setShowOkDialogueHandler()
+        + setShowOkDialogueForActionHandler()
+        + setToastMakeTextHandler()
+        + setShowAuthWriteConfigAlertHandler()
+        + Ntag_I2C_Demo()
+        - showAlert()
+        + isConnected()
+        {static} + isTagPresent()
+        + finishAllTasks()
+        + isReady()
+        + getProduct()
+        - onSetBoardVersion()
+        + setBoardVersion()
+        + resetTagMemory()
+        - getRegister_Settings()
+        - getPlusAuth_Settings()
+        - toastText()
+        + readSessionRegisters()
+        + readWriteConfigRegister()
+        - writeConfigRegisters()
+        - showAuthWriteConfigAlert()
+        + readTagContent()
+        - showTagNotPlusAlert()
+        - showDemoNotSupportedAlert()
+        + resetTagContent()
+        + LED()
+        + LEDFinish()
+        + NDEFReadFinish()
+        + NDEF()
+        + Flash()
+        + ObtainAuthStatus()
+        + Auth()
+        ~ roundUp()
+        + SRAMSpeedtest()
+        + SRAMSpeedFinish()
+        - appendCRC32()
+        - isCRC32Appended()
+        - isValidCRC32()
+        + EEPROMSpeedtest()
+        + EEPROMSpeedFinish()
+        + WriteEmptyNdefFinish()
+        + WriteDefaultNdefFinish()
+        - creatNdefDefaultMessage()
+        - createNdefTextMessage()
+        - createNdefUriMessage()
+        - createNdefBSSPMessage()
+        - createNdefSpMessage()
+        {static} + hexStringToByteArray()
+        - NDEFWrite()
+        - calcTempCelsius()
+        - calcTempFarenheit()
+        - calcVoltage()
+        + round()
+        # showResultDialogMessage()
+        - createNdefMessage()
+        # concat()
+        + onWriteEEPROM()
+        + onWriteSRAM()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class LedTask {
+        - deviceToTag : byte
+        - tagToDevice : byte
+        - noTransfer : byte
+        - invalidTransfer : byte
+        - exit : Boolean
+        # doInBackground()
+        - displayTransferDir()
+        # onProgressUpdate()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class NDEFReadTask {
+        - exit : Boolean
+        # doInBackground()
+        # onProgressUpdate()
+        # onPostExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class SRAMSpeedtestTask {
+        - exit : Boolean
+        - Data : byte[]
+        - chMultiplier : int
+        - readerTagTime : long
+        - tagReadTime : long
+        - isValidRxData : boolean
+        - isValidTxData : boolean
+        - isValidFirmware : boolean
+        # onPreExecute()
+        # doInBackground()
+        # onProgressUpdate()
+        # onPostExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class EEPROMSpeedtestTask {
+        - exit : Boolean
+        - writeTime : long
+        - readTime : long
+        - sendMessage : NdefMessage
+        - ndefMessageSize : int
+        + EEPROMSpeedtestTask()
+        # onPreExecute()
+        # doInBackground()
+        # onProgressUpdate()
+        # onPostExecute()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class WriteEmptyNdefTask {
+        - exit : Boolean
+        # doInBackground()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class WriteDefaultNdefTask {
+        - exit : Boolean
+        # doInBackground()
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class Ntag_I2C_Plus_Registers {
+        + auth0 : int
+        + nfcProt : boolean
+        + nfcDisSec1 : boolean
+        + authlim : int
+        + k2Prot : boolean
+        + sram_prot : boolean
+        + i2CProt : int
+    }
+  }
+  
+
+  package com.nxp.nfc_demo.reader {
+    class Ntag_I2C_Registers {
+        + Manufacture : String
+        + Mem_size : int
+        + I2C_RST_ON_OFF : Boolean
+        + FD_OFF : String
+        + FD_ON : String
+        + LAST_NDEF_PAGE : int
+        + NDEF_DATA_READ : Boolean
+        + RF_FIELD_PRESENT : Boolean
+        + PTHRU_ON_OFF : Boolean
+        + I2C_LOCKED : Boolean
+        + RF_LOCKED : Boolean
+        + SRAM_I2C_READY : Boolean
+        + SRAM_RF_READY : Boolean
+        + PTHRU_DIR : Boolean
+        + SM_Reg : int
+        + WD_LS_Reg : int
+        + WD_MS_Reg : int
+        + NDEF_Message : String
+        + SRAM_MIRROR_ON_OFF : Boolean
+        + I2C_CLOCK_STR : Boolean
+    }
+  }
+  
+
+  I2C_Enabled_Commands +-down- R_W_Methods
+  I2C_Enabled_Commands +-down- NS_Reg_Func
+  I2C_Enabled_Commands +-down- NC_Reg_Func
+  I2C_Enabled_Commands +-down- CR_Offset
+  I2C_Enabled_Commands +-down- SR_Offset
+  I2C_Enabled_Commands +-down- Access_Offset
+  I2C_Enabled_Commands +-down- PT_I2C_Offset
+  MinimalNtag_I2C_Commands -up-|> I2C_Enabled_Commands
+  MinimalNtag_I2C_Commands o-- Prod : tagType
+  MinimalNtag_I2C_Commands +-down- Register
+  Ntag_Get_Version +-down- Prod
+  Ntag_I2C_Commands -up-|> I2C_Enabled_Commands
+  Ntag_I2C_Commands o-- Ntag_Commands : reader
+  Ntag_I2C_Commands o-- Ntag_Get_Version : getVersionResponse
+  Ntag_I2C_Commands +-down- Register
+  Ntag_I2C_Demo -up-|> WriteEEPROMListener
+  Ntag_I2C_Demo -up-|> WriteSRAMListener
+  Ntag_I2C_Demo o-- SetBoardVersionListener : onSetBoardVersionHandler
+  Ntag_I2C_Demo o-- ShowAlertListener : onShowAuthWriteConfigAlertHandler
+  Ntag_I2C_Demo o-- ShowAlertListener : onShowAlertHandler
+  Ntag_I2C_Demo o-- ShowAlertListener : onShowOkDialogueHandler
+  Ntag_I2C_Demo o-- ShowAlertListener : onShowOkDialogueForActionHandler
+  Ntag_I2C_Demo o-- ShowToastListener : onToastMakeTextHandler
+  Ntag_I2C_Demo o-- UIDelegateListener : onLEDHandler
+  Ntag_I2C_Demo o-- I2C_Enabled_Commands : reader
+  Ntag_I2C_Demo o-- LedTask : lTask
+  Ntag_I2C_Demo o-- SRAMSpeedtestTask : sramspeedtask
+  Ntag_I2C_Demo o-- EEPROMSpeedtestTask : eepromspeedtask
+  Ntag_I2C_Demo o-- WriteEmptyNdefTask : emptyNdeftask
+  Ntag_I2C_Demo o-- WriteDefaultNdefTask : defaultNdeftask
+  Ntag_I2C_Demo o-- NDEFReadTask : ndefreadtask
+  Ntag_I2C_Demo +-down- LedTask
+  Ntag_I2C_Demo +-down- NDEFReadTask
+  Ntag_I2C_Demo +-down- SRAMSpeedtestTask
+  Ntag_I2C_Demo +-down- EEPROMSpeedtestTask
+  Ntag_I2C_Demo +-down- WriteEmptyNdefTask
+  Ntag_I2C_Demo +-down- WriteDefaultNdefTask
+  LedTask -up-|> AsyncTask
+  NDEFReadTask -up-|> AsyncTask
+  SRAMSpeedtestTask -up-|> AsyncTask
+  SRAMSpeedtestTask o-- R_W_Methods : method
+  EEPROMSpeedtestTask -up-|> AsyncTask
+  EEPROMSpeedtestTask o-- WriteEEPROMListener : listener
+  WriteEmptyNdefTask -up-|> AsyncTask
+  WriteDefaultNdefTask -up-|> AsyncTask
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
