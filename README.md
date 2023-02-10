@@ -1,5 +1,7 @@
 
-2018 android nfc(npx/flutter) 專案，分為 flutter 前端及 android 原生端開發，
+__2018 android nfc(npx/flutter) 專案__
+
+分為 flutter 前端及 android 原生端開發，
 原生端開發使用 NXP sdk 及 flutter 串接，這裡沒有放 flutter 原代碼，只有放 android 端與 
 flutter channel 與 NXP 溝通實作部份, 見 
 [MainActivity](./android/app/src/main/kotlin/com/gknot/MainActivity.kt)
