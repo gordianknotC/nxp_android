@@ -1,6 +1,9 @@
 
 __2018 android nfc(npx/flutter) 專案, 待整理, 參考不建議使用__
 
+
+![img_1.png](img_1.png)
+
 分為 flutter 前端及 android 原生端開發，
 原生端開發使用 NXP sdk 及 flutter 串接，這裡只放部份代碼，只放 android 端與 
 flutter channel 與 NXP 溝通相關實作部份, 見 
