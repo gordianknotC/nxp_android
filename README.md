@@ -5,8 +5,8 @@ __2018 android nfc(npx/flutter) 專案, 待整理, 參考不建議使用__
 
 
 分為 flutter 前端及 android 原生端開發，
-原生端開發使用 NXP sdk 及 flutter 串接，這裡只放部份代碼 (android NXP sdk 端與 
-flutter channel 溝通相關實作部份), 不包括 flutter 原代碼， andoird 端 flutter channel 溝通部份見 
+原生端開發使用 NXP sdk 及 flutter 串接，這裡只放部份代碼 (android NXP sdk(Java) 端透過 Kotlin Flutter Channel 轉接至 
+flutter 溝通相關實作部份), 不包括 flutter 原代碼， andoird 端 flutter channel 溝通部份見 
 
 - [MainActivity.kt](./android/app/src/main/kotlin/com/gknot/MainActivity.kt)
 ```kotlin
